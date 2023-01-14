@@ -30,7 +30,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
 }
 .list {
   list-style: none;
@@ -111,7 +110,6 @@ img {
   background: var(--title-color);
   padding-top: 188px;
   padding-bottom: 188px;
-  text-align: center;
 }
 
 .hero-title {
@@ -122,7 +120,7 @@ img {
   color: #ffffff;
   max-width: 500px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 48px;
 }
 .hero-btn {
   font-family: inherit;
@@ -133,7 +131,6 @@ img {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
-  margin-top: 48px;
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0px;
@@ -141,6 +138,8 @@ img {
   min-width: 169px;
   height: 56px;
   padding: 16px 32px;
+  display: block;
+  margin: auto;
 }
 .visually-hidden {
   position: absolute;
@@ -159,11 +158,9 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.planning-container {
-  display: flex;
-  
-}
+
 .planning-list {
+  display: flex;
   gap: 24px;
 }
 .planning-item {
@@ -187,10 +184,6 @@ img {
 .actions {
   padding-bottom: 120px;
 }
-.actions-container {
-  display: flex;
-  gap: 24px;
-}
 .actions-title,
 .team-title {
   font-weight: 700;
@@ -203,9 +196,12 @@ img {
   margin-bottom: 72px;
 }
 .actions-list {
+  display: flex;
+  gap: 24px;
 }
 
 .actions-item {
+  width: calc((100% - 48px) / 3);
 }
 /*------------------ Team------------------ */
 .team {
@@ -213,18 +209,23 @@ img {
   padding-bottom: 120px;
   background: #f4f4fd;
 }
-.team-container {
-  display: flex;
-  gap: 24px;
-}
+
 .team-title {
   margin-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  gap: 24px;
+}
+.team-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 68px) / 4);
 }
 .team-content {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  text-align: center;
 }
 .team-subtitle {
   font-weight: 500;
@@ -232,6 +233,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  margin-top: 32px;
   margin-bottom: 8px;
 }
 .team-text {
@@ -239,6 +241,7 @@ img {
   line-height: var(--text-lh);
   letter-spacing: 0.02em;
   color: #434455;
+  margin-bottom: 32px;
 }
 /*------------------ Footer------------------ */
 .footer {
@@ -253,6 +256,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+  display: flex;
+  padding: 0px;
 }
 .footer-logo-web {
   color: #4d5ae5;
@@ -263,6 +268,7 @@ img {
   line-height: var(--text-lh);
   letter-spacing: 0.02em;
   color: #e7e9fc;
+  max-width: 264px;
 }
 
 /* Стилі портфоліо  */
@@ -271,28 +277,48 @@ img {
   padding-bottom: 120px;
 }
 .project-content {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: block;
+  padding: 0 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-top: 0;
 }
 .projects-buttons-list {
+  display: flex;
+  padding: 0px;
+  gap: 24px;
+  justify-content: center;
 }
 .projects-button-item {
 }
+
 .project-btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  text-align: center;
   color: #4d5ae5;
+  background: #f4f4fd;
+  padding: 12px 24px;
   cursor: pointer;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 
 .projects-list {
   margin-top: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .project-item {
+  background: #ffffff;
+  width: calc((100% - 48px) / 3);
 }
+
 .project-link {
 }
 .project-subtitle {
@@ -301,6 +327,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 32px;
   padding-bottom: 8px;
 }
 .project-text {
@@ -308,4 +335,5 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-bottom: 32px;
 }
