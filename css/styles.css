@@ -226,6 +226,8 @@ img {
 }
 .team-content {
   text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .team-subtitle {
   font-weight: 500;
@@ -233,7 +235,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-color);
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 .team-text {
@@ -241,7 +242,6 @@ img {
   line-height: var(--text-lh);
   letter-spacing: 0.02em;
   color: #434455;
-  margin-bottom: 32px;
 }
 /*------------------ Footer------------------ */
 .footer {
@@ -258,10 +258,10 @@ img {
   color: #f4f4fd;
   display: flex;
   padding: 0px;
+  margin-bottom: 16px;
 }
 .footer-logo-web {
   color: #4d5ae5;
-  margin-bottom: 16px;
 }
 .footer-text {
   font-size: var(--text-font-size);
@@ -278,7 +278,10 @@ img {
 }
 .project-content {
   display: block;
-  padding: 0 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: auto;
   border: 1px solid #e7e9fc;
   border-top: none;
   margin-top: 0;
@@ -327,13 +330,11 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .project-text {
   font-size: var(--text-font-size);
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-bottom: 32px;
 }
